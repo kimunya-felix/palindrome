@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkPal(word1){
+            let wordSplit=word1.split("");
+            let neword = wordSplit.reverse();
+            let revWord= neword.join("");
+            console.log(revWord);
+            if(word1==revWord){
+               console.log("is a palindrome word");
+            }else{
+                console.log("not palindrome");
+            }
+        }
+        console.log(checkPal("race"));
+    </script>
+</body>
+</html>
